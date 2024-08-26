@@ -1,0 +1,86 @@
+:root {
+  --black-bg-color: black; /* Default color for the button */
+  --white-bg-color: white;
+  --blue-bg-color: #4a98f7;
+  --dark-blue-bg-color: rgb(204, 234, 246, 0.6);
+}
+body{
+  background-color: transparent;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--blue-bg-color);
+  justify-content: center;
+  display: flex;
+}
+.box{
+  height: 50vh;
+  margin-top: 10%;
+  min-height: 500px;
+  width: 60vw;
+  min-width: 500px;
+  background-color: white;
+  border-radius: 20px;
+  justify-content: center;
+  position: relative;
+}
+.clock-icon{
+  margin-top: 10%;
+  height: 20vw;
+  width: 20vw;
+  max-height: 20%;
+  max-width: 20%;
+  background-color: rgb(254, 255, 241);
+  margin-left: 42%;
+}
+.clock-icon img{
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.time{
+  font-size: 300%;
+  display: flex;
+  border-radius: 30px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+@media (min-width: 833px){
+  .clock-icon{
+    margin-left: 28vw;
+  }
+}
+.set-alarm{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin-top: 30px;
+}
+.set-alarm input{
+  height: 2vw;
+  width: 10vw;
+  max-height: 30px;
+  border-radius: 13px;
+  margin-right: 10px;
+  font-size: 110%;
+  margin-left: 2vw;
+  padding: 1vw;
+}
+.button{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+button{
+  background-color: var(--blue-bg-color);
+  border-radius: 10px;
+  font-size: 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 15px;
+}
+input::placeholder{
+  color: rgba(0,0,0,0.7);
+}

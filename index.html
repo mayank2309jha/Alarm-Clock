@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css" />
+  <title>Digital-Clock</title>
+</head>
+
+<body>
+  <div class="box">
+    <div class="clock-icon">
+      <img
+        src="https://imgs.search.brave.com/83tZTNC71WTNYkcEDdlsMmkilRfQyCMjEV3J_Ug2pFs/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL2Nsb2NrLXBu/Zy1wbmctZmlsZS1u/YW1lLWFsYXJtLWNs/b2NrLTExMTgucG5n"
+        alt="Alarm Clock" />
+    </div>
+    <div class="clock">
+      <div class="time">
+        <div class="digit hour">00</div>
+        <div class="colon">&colon;</div>
+        <div class="digit minute">00</div>
+        <div class="colon">&colon;</div>
+        <div class="digit second">00</div>
+        <div style="visibility: hidden;">&colon;</div>
+        <div class="digit meridian">PM</div>
+      </div>
+    </div>
+    <div class="set-alarm">
+      <input type="text" class="input-hour" placeholder="Hour"></input>
+      <input type="text" class="input-minute" placeholder="Minutes"></input>
+      <input type="text" class="input-meridian" placeholder="AM/PM"></input>
+    </div>
+    <div class="button"><button>Start Alarm</button></div>
+
+  </div>
+  </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>
